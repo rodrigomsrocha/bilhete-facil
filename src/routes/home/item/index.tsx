@@ -25,11 +25,11 @@ export function Item() {
       </Link>
       <div className="flex flex-wrap gap-4">
         <img
-          className="aspect-square object-cover max-w-sm w-full flex-1"
+          className="aspect-square object-cover md:max-w-sm w-full flex-1"
           src={img}
           alt=""
         />
-        <div className="flex-1 flex flex-col gap-4 max-w-[50%] justify-between">
+        <div className="flex-1 flex flex-col gap-4 justify-between">
           <div>
             <span className="text-muted-foreground mb-2 block">
               #{id.padStart(4, '0')}

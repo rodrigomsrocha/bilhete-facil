@@ -7,13 +7,13 @@ import { Link } from 'react-router-dom'
 export function Header() {
   const isAuthenticated = localStorage.getItem('token')
   return (
-    <header className="max-w-5xl px-6 mx-auto flex justify-between items-center py-2">
+    <header className="max-w-5xl gap-4 px-6 mx-auto flex justify-between items-center py-2">
       <Link
         to="/"
         className="text-xl flex gap-2 items-center hover:animate-pulse duration-1000 cursor-pointer"
       >
         <Ticket className="-rotate-45" size={24} />
-        BilheteFacil
+        <span className="hidden sm:inline">BilheteFacil</span>
       </Link>
       <div className="flex gap-2 items-center max-w-xs w-full">
         <Input type="text" placeholder="Evento..." />
