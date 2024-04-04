@@ -15,7 +15,7 @@ import * as z from 'zod'
 const formSchema = z.object({
   card_number: z.string().min(2).max(50),
   card_name: z.string(),
-  expire_date: z.date(),
+  expire_date: z.string(),
   cvc: z.number().min(100).max(9999),
 })
 
@@ -69,7 +69,7 @@ export function CardForm() {
                 <FormLabel>Data de validade</FormLabel>
                 <FormControl>
                   <Input
-                    type="date"
+                    type="text"
                     placeholder="Descrição do evento..."
                     {...field}
                   />
