@@ -1,5 +1,7 @@
 import { CartItem } from '@/components/cart-item'
+import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
+import { Link } from 'react-router-dom'
 
 export function CartPage() {
   return (
@@ -28,6 +30,9 @@ export function CartPage() {
         <span className="text-lg">Total</span>
         <strong className="text-right text-lg">R$ 690,00</strong>
       </div>
+      <Link className="block" to="/checkout">
+        <Button>Finalizar Compra</Button>
+      </Link>
     </div>
   )
 }

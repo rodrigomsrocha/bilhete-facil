@@ -30,7 +30,7 @@ export function CheckoutPage() {
           <CartItem showQuantityInput={false} />
         </div>
         <Separator orientation="horizontal" />
-        <div className="border border-border grid grid-cols-3 p-4 rounded-md gap-4 items-start">
+        <div className="border border-border grid grid-cols-2 sm:grid-cols-3 p-4 rounded-md gap-4 items-start">
           <div className="col-start-1 col-end-3 space-y-4">
             <header className="grid grid-cols-2 gap-4">
               <Button
@@ -54,7 +54,7 @@ export function CheckoutPage() {
             </header>
             {paymentMethod === 'card' ? <CardForm /> : <PixForm />}
           </div>
-          <div className="bg-muted rounded-md p-2 space-y-4">
+          <div className="bg-muted rounded-md p-2 space-y-4 col-start-1 col-end-3 row-start-1 sm:col-start-3">
             <header>
               <strong className="text-lg">Detalhes de compra</strong>
             </header>

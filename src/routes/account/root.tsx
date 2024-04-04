@@ -8,10 +8,12 @@ export function AccountRoot() {
   return (
     <div className="min-h-screen grid grid-cols-1 lg:grid-cols-2 p-12 gap-8">
       <div className="bg-muted p-12 rounded-lg hidden lg:flex flex-col justify-between">
-        <h1 className="text-2xl font-medium flex items-center gap-2">
-          <Ticket className="-rotate-45" size={28} />
-          BilheteFácil
-        </h1>
+        <Link to="/">
+          <h1 className="text-2xl font-medium flex items-center gap-2">
+            <Ticket className="-rotate-45" size={28} />
+            BilheteFácil
+          </h1>
+        </Link>
         <p className="text-lg max-w-[500px] font-medium">
           Venda ou compre ingressos para os seus shows favoritos.
         </p>

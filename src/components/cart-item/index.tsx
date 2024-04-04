@@ -20,7 +20,7 @@ export function CartItem({ showQuantityInput = true }: CartItemProps) {
   }
 
   return (
-    <div className="flex justify-between">
+    <div className="block space-y-2 sm:flex justify-between flex-wrap gap-4">
       <div className="flex gap-2">
         <img
           className="w-20 h-20 object-cover overflow-hidden rounded-md"
@@ -45,7 +45,7 @@ export function CartItem({ showQuantityInput = true }: CartItemProps) {
           </div>
         )}
         <strong className="text-right">R$ 230,00</strong>
-        <Button size="icon">
+        <Button className="ml-auto sm:ml-0" size="icon">
           <Trash size={18} />
         </Button>
       </div>
