@@ -27,7 +27,7 @@ export function ProfileRoot() {
         </span>
       </header>
       <Separator />
-      <div className="flex lg:flex-col gap-8">
+      <div className="flex flex-col lg:flex-row gap-8">
         <aside className="w-1/5">
           <SidebarNav items={sidebarNavItems} />
         </aside>
