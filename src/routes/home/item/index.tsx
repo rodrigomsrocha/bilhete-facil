@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 import { CaretLeft, ShoppingCart } from '@phosphor-icons/react'
 import { toast } from 'sonner'
 
-export function loader({ params }) {
+export function loader({ params }: { params: { id: string } }) {
   return { id: params.id }
 }
 

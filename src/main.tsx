@@ -1,6 +1,10 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import {
+  createBrowserRouter,
+  LoaderFunction,
+  RouterProvider,
+} from 'react-router-dom'
 import './index.css'
 import { Home } from './routes/home'
 import { Root } from './routes/home/root'
@@ -22,7 +26,11 @@ const router = createBrowserRouter([
     element: <Root />,
     children: [
       { path: '', element: <Home /> },
-      { path: 'item/:id', element: <Item />, loader: itemLoader },
+      {
+        path: 'item/:id',
+        element: <Item />,
+        loader: itemLoader as unknown as LoaderFunction,
+      },
       {
         path: 'profile',
         element: <ProtectedRoute />,
